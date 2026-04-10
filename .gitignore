@@ -1,5 +1,12 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
+# Project-local notes & marketing copy (keep out of remote)
+README.md
+ROADMAP.md
+Pensaments.txt
+newFetures.txt
+newfeatures.txt
+
 # dependencies
 node_modules/
 
@@ -30,8 +37,25 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
+# local env files (never commit real keys)
+.env
 .env*.local
+.env.production
+.env.development
+
+# IDE / editor (JetBrains; add .vscode/ here if you keep only local editor config)
+.idea/
+
+# Logs & caches
+*.log
+logs/
+.turbo/
+coverage/
+*.lcov
+
+# OS / misc
+Thumbs.db
+Desktop.ini
 
 # typescript
 *.tsbuildinfo
